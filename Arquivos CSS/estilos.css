@@ -1,0 +1,31 @@
+body{ 
+    background-image: url("https://i.pinimg.com/originals/c9/53/59/c95359e240232292dffa74f6af3311ee.jpg");
+    background-size:1000px;
+  font-family: Verdana;
+    height:100vh;
+  }
+  .site-title {
+    font: arial;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .site-subtitle {
+    color: whitesmoke;
+    text-align: center;
+  }
+  .menu ul{
+    display:flex;
+    justify-content: space-around;
+    background-color: lightseagreen;
+    list-style:none;
+  }
+  .menu li{ 
+  font-family: Arial;
+  color:MIDNIGHTBLUE;
+  }
+  a { 
+  text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
