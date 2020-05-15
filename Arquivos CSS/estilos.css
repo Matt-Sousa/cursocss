@@ -4,14 +4,14 @@ padding: 0;
 box-sizing: border-box;
 }
 body{ 
-    background-image: url("https://i.pinimg.com/originals/c9/53/59/c95359e240232292dffa74f6af3311ee.jpg");
+    background-image: url("https://ak.picdn.net/shutterstock/videos/20107759/thumb/1.jpg");
     background-size:250vh 50vw;
     font-family: 'Capriola', sans-serif;
     height:100vh;
   }
 header{
 display: flex;
-height:100vh;
+min-height:100vh;
 width: 100vw;
 justify-content: center;
 align-items: center;
@@ -20,13 +20,33 @@ align-items: center;
     font-size:60px;
     font-family: 'Quantico', sans-serif;
     text-align: center;
-    color: rgba(245, 245, 245, 0.877);
+    color: white;
+    text-shadow: black 2px 2px;
   }
   .site-subtitle {
     font-family: 'Michroma', sans-serif;
-    color: whitesmoke;
+    color: white;
     text-align: center;
+    text-shadow:black 2px 2px ;
+    padding-bottom: 10vh;
   }
+  .text-about{
+    background-color: rgba(3, 156, 156, 0.842);
+    text-align: center;
+    color:white;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    border-radius: 100px;
+    padding: 5vh;
+  }
+  @media (min-width:1000px) { .text-about{
+    height: 20vh;
+    width: 50vw;
+    padding: 4vh;
+    font-size: 18px;
+  }
+}
   .menu{
     position: fixed;
     width: 100vw;
@@ -36,12 +56,18 @@ align-items: center;
     display: block;
     color:MIDNIGHTBLUE;
     padding: 10px 20px;
+    transition: background-color 1s, color 0.5s;
+  }
+  .menu a:hover{
+    text-decoration: none;
+    background-color: midnightblue;
+    color:white
 
   }
   .menu ul{
     display:flex;
     justify-content: space-around;
-    background-color: lightseagreen;
+    background-color: rgb(61, 156, 245);
     list-style:none;
     font-family: 'Jua', sans-serif;
     font-size: 15px;
@@ -60,33 +86,47 @@ color:white;
 font-family: 'Michroma', sans-serif;
 }
 .img-projetos {
-  padding: 10px;
+  padding:0px;
   color: white;
   font-family: 'Michroma', sans-serif;
   text-align: center;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 @media (min-width:1000px){
   .img-projetos{
     height:250px;
     width: 250px;
+    box-shadow: rgb(112, 192, 129) 0px 0px 0 7px;
+    margin-bottom: 10px;
   }
 }
 .projetos{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmUth3ePjMtwS58sPB1cP0ChAqjf2AYnFDs7gAT3ePKVFDcuKC&usqp=CAU); 
+  background-size:50wh;
   margin-bottom: 2em;
+  align-content: center;
+  color:white ;
+  font-size: 15px;
 }
+@media (min-width:1000px){.projetos {
+  height:600px;
+  align-content: center;
+   }
 .projetos h2{
   color:white;
+  background-color: rgba(86, 183, 221, 0.897);
+  font-size: 50px;
   font-family: 'Tomorrow', sans-serif;
-  font-size:40px;
   text-align: center;
-  padding: 10px;
 }
 .projetos .grid{
   display: grid;
   text-align: center;
   gap:3em;
+  padding-top: 85px;
+  align-content: center;
+ }
 }
 @media (min-width:1000px){.projetos .grid {
   align-content:center ;
@@ -95,7 +135,39 @@ font-family: 'Michroma', sans-serif;
   grid-template-columns: 200px 200px 220px;
  }
 }
-
 .projetos figure{
-  font-size: 25px;
+  align-content: center;
+  font-size: 15px;
+}
+@media (min-width:1000px){ .projetos figure {
+font-size: 25px;
+ }
+}
+@media (min-width: 1000px){.projetos figcaption{
+  background-color: rgb(100, 232, 237);
+  border-radius: 10px;
+  text-shadow: black 2px 2px;
+ }
+}
+.sobre {
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190728/pngtree-purple-abstract-4k-free-wallpaper-background-download-png-and-psd-files-image_285854.jpg);
+  color: white;
+  font-size: 15px;
+}
+.sobre h2{
+  font-size: 50px;
+  background-color: purple;
+  font-family: 'Tomorrow', sans-serif;
+  text-align: center;
+}
+.sobre h3{
+  text-align: center;
+  padding: 60px;
+  font-size: 20px;
+}
+@media (min-width:1000px){
+  .sobre h3{
+    font-size: 30px;
+    padding: 70px;
+  }
 }
